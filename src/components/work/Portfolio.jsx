@@ -11,8 +11,52 @@ const Portfolio = () => {
             <div className="conteiner work__container">
                 <article className="work">
                     <div className="work__head">
+                        <h3>Automation Framework Developper</h3>
+                        <h5>Sept 2022 to Present</h5>
+                    </div>
+
+                    <ul className="work__details">
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Developped and enhanced a dashboard (Django/Angular based web application) used by 70+ employee.</p>
+                        </li>
+                        
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Enhanced a Python-based automation framework.</p>
+                        </li>
+
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Developped new APIs to optimize the response time and efficiency of multiple applications by up to 80%.</p>
+                        </li>
+
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Developped automated tests, enabling faster design and test cycles.</p>
+                        </li>
+
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Tested and worked on leading edge, high performance cloud technologies.</p>
+                        </li>
+
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Developped full end to end system tests to validate the product as a customer would use it.</p>
+                        </li>
+
+                        <li>
+                            <BiCheckDouble className="work__details-icon"/>
+                            <p>Participated in all aspects of the software development process using agile development.</p>
+                        </li>
+                    </ul>
+                </article>
+                
+                <article className="work">
+                    <div className="work__head">
                         <h3>Web Developer</h3>
-                        <h5>May 2022 to Present</h5>
+                        <h5>May 2022 to Aug 2022</h5>
                     </div>
 
                     <ul className="work__details">
@@ -57,24 +101,6 @@ const Portfolio = () => {
                     </ul>
                 </article>
 
-                <article className="work">
-                    <div className="work__head">
-                        <h3>Data analyst</h3>
-                        <h5>May 2021 to Aug 2021</h5>
-                    </div>
-
-                    <ul className="work__details">
-                        <li>
-                            <BiCheckDouble className="work__details-icon"/>
-                            <p>Sourced and developped new strategic ways of storing and handling data.</p>
-                        </li>
-                        
-                        <li>
-                            <BiCheckDouble className="work__details-icon"/>
-                            <p>Managed Data and made sure all systems work perfectly.</p>
-                        </li>
-                    </ul>
-                </article>
             </div>
         </section>
     )
