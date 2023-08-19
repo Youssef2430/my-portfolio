@@ -1,17 +1,20 @@
 .work__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    padding: 3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .work {
     background: var(--color-bg-variant);
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 2rem;
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
+    margin-bottom: 1rem;
 }
+
 
 .work:hover {
     background: transparent;
@@ -21,15 +24,23 @@
 
 .work__head {
     background: var(--color-primary);
-    padding: 2rem;
-    border-radius: 0 0 2rem 2rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
     box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
 }
 
 .work__head h3 {
     color: var(--color-bg);
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
+}
+
+.work__head h4 {
+    color: #EBEBEB;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style:italic;
+    padding-top: 0%;
 }
 
 .work__head h5 {
@@ -55,12 +66,12 @@
 }
 
 .work__details p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 1024px) {
     .work__container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 

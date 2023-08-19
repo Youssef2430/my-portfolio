@@ -22,7 +22,7 @@ const About = () => {
                         <article className="about__card">
                             <FaAward className="about__icon"/>
                             <h5>Experience</h5>
-                            <small>1 Year</small>
+                            <small>1 Year+</small>
                         </article>
 
                         <article className="about__card">
@@ -33,10 +33,10 @@ const About = () => {
 
                     </div>
                         <p>
-                        I'm a third year, international, student in Software Engineering at the University of Ottawa. 
-                        Extremely passionate about what I do, I always do my best to excel at it and give it my all.
-                        I also enjoy some kind of challenge in whatever I do
-                        so I'm always looking for new opportunities to grow and develop new skills !
+                        As a passionate and highly motivated Software Engineering student,
+                        I am committed to pursuing a career in the dynamic and ever-evolving technology field. <br/>
+                        With a strong interest in the endless possibilities of technology,
+                        I am dedicated to applying my skills and knowledge to create innovative solutions that address real-world challenges.
                         </p>
 
                         <a href="#contact" className="btn btn-primary">Let's Talk</a>
