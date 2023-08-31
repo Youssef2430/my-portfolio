@@ -1,54 +1,50 @@
 import React from "react";
 import "./portfolio.css"
-import IMG1 from "../../assets/portfolio1.jpg"
+import IMG1 from "../../assets/portfolio1.png"
 import IMG2 from "../../assets/portfolio2.png"
-import IMG3 from "../../assets/portfolio3.jpg"
+import IMG3 from "../../assets/portfolio3.png"
 import IMG4 from "../../assets/portfolio4.jpg"
-import IMG5 from "../../assets/portfolio5.jpg"
-import IMG6 from "../../assets/portfolio6.jpg"
+import IMG5 from "../../assets/portfolio5.png"
+import IMG6 from "../../assets/portfolio6.png"
 
 const data = [
     {
         id: 1,
         image: IMG1,
-        title: "Post-It!",
-        github: "https://github.com/Youssef2430/Post-it",
-        demo: "https://github.com"
+        title: "Chat with your PDFs",
+        github: "https://github.com/Youssef2430/chat-with-pdfs",
+        demo: "https://chat-with-your-pdfs-youssef.streamlit.app/#chat-with-pdfs"
     },
     {
         id: 2,
         image: IMG2,
         title: "Compressor",
         github: "https://github.com/Youssef2430/Compressor",
-        demo: "https://github.com"
     },
     {
         id: 3,
         image: IMG3,
-        title: "Synthax analyser",
-        github: "https://github.com/Youssef2430/Regular-expression-matching",
-        demo: "https://github.com"
+        title: "Hotel Chain",
+        github: "https://github.com/Youssef2430/hotel_chain",
     },
     {
         id: 4,
         image: IMG4,
-        title: "MyLibrary",
-        github: "https://github.com/Youssef2430/My-Library",
-        demo: "https://github.com"
+        title: "Space Invaders",
+        github: "https://github.com/Youssef2430/Space-invaders",
     },
     {
         id: 5,
         image: IMG5,
-        title: "Quick-Fix",
-        github: "https://github.com/Youssef2430/Quick-Fix",
-        demo: "https://github.com"
+        title: "Work It Out!",
+        github: "https://github.com/Youssef2430/work-it-out",
+        demo: "https://work-it-out.netlify.app/"
     },
     {
         id: 6,
         image: IMG6,
-        title: "Space Invaders",
-        github: "https://github.com/Youssef2430/Space-invaders",
-        demo: "https://github.com"
+        title: "VR sensibilisation game",
+        github: "https://github.com/mdery022/GNG2501_Project",
     }
 ]
 
@@ -61,17 +57,32 @@ const Quotes = () => {
             <div className="container portfolio__container">
                 {
                     data.map(({id, image, title, github, demo}) => {
-                        return(
-                            <article key={id} className="portfolio__item">
-                                <div className="portfolio__item-image">
-                                    <img src={image} alt={title} />
-                                </div>
-                                <h3>{title}</h3>
-                                <div className="portfolio__item-cta">
-                                    <a href={github} className="btn btn-primary" target={"_blank"}>Github</a>
-                                </div>
-                            </article>
-                        )
+                        if (demo) {
+                            return(
+                                <article key={id} className="portfolio__item">
+                                    <div className="portfolio__item-image">
+                                        <img src={image} alt={title} />
+                                    </div>
+                                    <h3>{title}</h3>
+                                    <div className="portfolio__item-cta">
+                                        <a href={github} className="btn btn-primary" target={"_blank"}>Github</a>
+                                        <a href={demo} className="btn btn-secondary" target={"_blank"}>Demo</a>
+                                    </div>
+                                </article>
+                            )
+                        }else {
+                            return(
+                                <article key={id} className="portfolio__item">
+                                    <div className="portfolio__item-image">
+                                        <img src={image} alt={title} />
+                                    </div>
+                                    <h3>{title}</h3>
+                                    <div className="portfolio__item-cta">
+                                        <a href={github} className="btn btn-primary" target={"_blank"}>Github</a>
+                                    </div>
+                                </article>
+                            )
+                        }
                     })
                 }
 
